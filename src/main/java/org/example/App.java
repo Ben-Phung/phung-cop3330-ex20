@@ -55,5 +55,14 @@ public class App {
 
             System.out.println( "The tax is $" +String.format("%.2f",tax) + ".\nThe total is $" +String.format("%.2f",dAmount) + "." );
         }
+        // Any other state calculation
+        else
+        {
+            taxRate = 0;
+            tax = taxRate * dAmount;
+            dAmount = dAmount + tax;
+
+            System.out.println( "The tax is $" +String.format("%.2f",tax) + ".\nThe total is $" +String.format("%.2f",dAmount) + "." );
+        }
     }
 }
